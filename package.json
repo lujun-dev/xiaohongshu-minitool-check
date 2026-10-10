@@ -1,0 +1,31 @@
+{
+  "name": "xhs-minitool-check",
+  "version": "0.1.0",
+  "description": "小红书小工具离线包合规校验器：上传前自查 zip / dist 目录，按官方规范逐条扫，输出能传 / 不能传与原因",
+  "type": "module",
+  "bin": {
+    "xhs-minitool-check": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "SKILL.md",
+    "docs"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run-tests.mjs"
+  },
+  "keywords": [
+    "xiaohongshu",
+    "minitool",
+    "h5",
+    "offline",
+    "validator",
+    "linter"
+  ],
+  "license": "MIT",
+  "private": false
+}
