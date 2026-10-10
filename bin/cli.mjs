@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// xhs-minitool-check —— 小红书小工具离线包合规校验器
-// 用法：xhs-minitool-check <dist 目录 | tool.zip> [--json] [--runtime] [--quiet]
+// xiaohongshu-minitool-check —— 小红书小工具离线包合规校验器
+// 用法：xiaohongshu-minitool-check <dist 目录 | tool.zip> [--json] [--runtime] [--quiet]
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,10 +12,10 @@ const VERSION = '0.1.0';
 
 function usage() {
   return [
-    `xhs-minitool-check ${VERSION} —— 小红书小工具离线包合规校验器`,
+    `xiaohongshu-minitool-check ${VERSION} —— 小红书小工具离线包合规校验器`,
     '',
     '用法：',
-    '  xhs-minitool-check <dist 目录 | tool.zip> [选项]',
+    '  xiaohongshu-minitool-check <dist 目录 | tool.zip> [选项]',
     '',
     '选项：',
     '  --json       输出机器可读 JSON（给 CI / agent 用）',
@@ -130,7 +130,7 @@ async function main() {
 
   if (args.json) {
     console.log(JSON.stringify({
-      tool: 'xhs-minitool-check', version: VERSION,
+      tool: 'xiaohongshu-minitool-check', version: VERSION,
       ok: result.ok, target: result.target, kind: result.kind,
       fileCount: result.fileCount, totalBytes: result.totalBytes,
       errors: result.errors, warns: result.warns,

@@ -322,7 +322,7 @@ function trunc(s, n = 70) {
 
 export function formatReport(r) {
   const L = [];
-  L.push(`xhs-minitool-check — ${r.kind === 'zip' ? 'zip 包' : '目录'}：${r.target}`);
+  L.push(`xiaohongshu-minitool-check — ${r.kind === 'zip' ? 'zip 包' : '目录'}：${r.target}`);
   L.push(`文件 ${r.fileCount} 个，共 ${r.totalBytes > 1024 * 1024 ? mb(r.totalBytes) : kb(r.totalBytes)}`);
   L.push('');
   if (r.errors.length) {

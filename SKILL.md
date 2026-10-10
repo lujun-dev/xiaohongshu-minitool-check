@@ -1,5 +1,5 @@
 ---
-name: xhs-minitool-check
+name: xiaohongshu-minitool-check
 description: 小红书小工具离线 H5 包上传前自查。改完页面 / 打完 zip、准备上传创作者中心之前用，扫包结构、文件类型、被禁 API、外部资源、体积，并可起真实浏览器做运行时检查。
 ---
 

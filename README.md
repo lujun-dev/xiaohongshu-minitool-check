@@ -1,4 +1,4 @@
-# xhs-minitool-check
+# xiaohongshu-minitool-check
 
 小红书小工具离线包**上传前自查**工具。零依赖，一条命令扫完，直接告诉你「能传 / 不能传 + 为什么」。
 
